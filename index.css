@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    min-height: 100vh;
+    background-color: #a1d2ce;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.paybox, .paypal, .bit {
+    margin-bottom: 30px;
+}
+
+.paybox, .paypal {
+    display: block;
+    height: 83px;
+    width: 350px;
+}
+
+.paybox {
+    background-image: url('./assets/img/paybox.webp');
+    background-position: 50.5% -9px;
+}
+
+.paypal {
+    background-image: url('./assets/img/paypal.webp');
+    background-position: 50.5% -13px;
+}
+
+.bit {
+    background-image: url('./assets/img/bit.webp');
+    background-position: 50% -10px;
+    height: 100px;
+    width: 200px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .paybox, .paypal {
+        width: 280px;
+        height: 68px;
+        margin-bottom: 20px;
+        background-size: 820px;
+    }
+} 
