@@ -1,20 +1,88 @@
+@font-face {
+    font-family: amatic;
+    font-weight: normal;
+    src: url(./assets/fonts/amatic/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: amatic;
+    font-weight: bold;
+    src: url(./assets/fonts/amatic/AmaticSC-Bold.ttf);
+}
+
+@font-face {
+    font-family: rubik;
+    font-weight: normal;
+    src: url(./assets/fonts/rubik/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: rubik;
+    font-weight: bold;
+    src: url(./assets/fonts/rubik/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: pangolin;
+    font-weight: normal;
+    src: url(./assets/fonts/pangolin/Pangolin-Regular.ttf);
+}
+
 body {
     margin: 0;
+    position: relative;
+}
+
+.header {
+    font-size: 2.6em;
+    text-align: center;
+}
+
+.header .en {
+    font-family: rubik;
+}
+
+.header .he {
+    font-family: rubik;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: grayscale() blur(5px) brightness(150%) contrast(30%);
+    z-index: -1;
+    background-image: url('./assets/img/leonid.jpg');
 }
 
 .main-container {
     min-height: 100vh;
-    background-color: #a1d2ce;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-text {
-    text-align: center;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 50px;
+    height: 100%;
 }
 
-.paybox, .paypal, .bit {
+.main-text, .final-text {
+    text-align: center;
+    font-family: rubik;
+    font-size: 1.8em;
+}
+
+.paybox, .paypal {
     margin-bottom: 30px;
 }
 
@@ -39,12 +107,30 @@ body {
     background-position: 50% -10px;
     height: 100px;
     width: 200px;
+    margin-bottom: 10px;
+}
+
+.bit-phone-number {
+    font-family: rubik;
+    font-size: 1.6em;
 }
 
 @media screen and (max-width: 500px) {
 
+    .main-container {
+        padding: 20px;
+    }
+
     .header {
-        font-size: 1.5em;
+        font-size: 1.7em;
+    }
+
+    .main-text, .final-text {
+        font-size: 1.2em;
+    }
+
+    .bit-phone-number {
+        font-size: 1.4em;
     }
 
     .paybox, .paypal {
@@ -52,5 +138,10 @@ body {
         height: 68px;
         margin-bottom: 20px;
         background-size: 820px;
+    }
+
+    .wrapper {
+        margin: 0;
+        border-radius: 0;
     }
 } 
