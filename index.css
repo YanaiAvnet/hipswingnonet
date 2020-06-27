@@ -93,17 +93,17 @@ body {
 }
 
 .paybox {
-    background-image: url('./assets/img/paybox.webp');
+    background-image: url('./assets/img/paybox.png');
     background-position: 50.5% -9px;
 }
 
 .paypal {
-    background-image: url('./assets/img/paypal.webp');
+    background-image: url('./assets/img/paypal.png');
     background-position: 50.5% -13px;
 }
 
 .bit {
-    background-image: url('./assets/img/bit.webp');
+    background-image: url('./assets/img/bit.png');
     background-position: 50% -10px;
     height: 100px;
     width: 200px;
